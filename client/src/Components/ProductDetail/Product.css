@@ -1,0 +1,28 @@
+.thumbnails {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  overflow: scroll;
+ 
+}
+.carousel-image {
+  vertical-align: middle;
+  width: 64%;
+  height: 100%;
+}
+.thumbnail {
+  margin: 0 2px;
+  width: 90px;
+  overflow: hidden;
+}
+.thumbnails {
+  display: flex;
+ padding-top: 5px;
+ padding-bottom: 5px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  overflow: scroll;
+}

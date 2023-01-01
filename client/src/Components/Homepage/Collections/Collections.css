@@ -1,0 +1,181 @@
+
+.ct {
+    color: #fff;
+    font-family: 'Arial';
+    font-size: 300%;
+    font-weight: 300;
+    
+}
+
+p {
+    color: #fff;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+/* a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 120%;
+} */
+
+/* MAIN */
+#distance{
+    margin: 4%;
+}
+#mytetxt{
+    color: black;
+    text-align: center;
+    margin-bottom:10px ;
+    font-size:38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+.section-content {
+    /* background: #fff; */
+    /* border: 1px solid #fff; */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+   
+    padding: 10px 10px;
+}
+
+.content-wrapper {
+    display: inline-block;
+    width: 100%;
+     height: 40%;
+    text-align: center;
+}
+
+
+.box-unique {
+    width: 100%;
+    margin: 10;
+    padding: 10%;
+    border: 1px hidden;
+    position: relative;
+    height: 600px;
+}
+
+.box-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(https://images.unsplash.com/photo-1552668693-2be72c866be4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);    
+    background-size: cover;
+    margin: auto;
+    /* border-radius: 10px 10px 0 0; */
+}
+
+.box-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(https://images.unsplash.com/photo-1552874869-5c39ec9288dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW5zJTIwZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60) no-repeat center;
+    background-size: cover; 
+    margin: auto;
+    /* border-radius: 0 0 10px 10px */
+}
+.box-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(https://media.istockphoto.com/photos/portrait-of-cute-girl-at-the-studio-picture-id1370281135?k=20&m=1370281135&s=612x612&w=0&h=jDyFgaMRe-xRAT7VNEjuY1FMTrOymvuAHAozFLhQEUo=) no-repeat center;
+    background-size: cover; 
+    margin: auto;
+    /* border-radius: 0 0 10px 10px */
+}
+
+.first {
+    display: block;
+    position: relative;
+    max-width: 100%;
+}
+
+.second {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #fff;
+}
+
+.box-1 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+.box-2 .second {
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+.box-1:hover {
+    background-image:url(https://images.unsplash.com/photo-1552668693-2be72c866be4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    transition: background-image 0.3s;
+
+}
+.box-2:hover {
+    background-image:url(https://images.unsplash.com/photo-1552874869-5c39ec9288dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29tZW5zJTIwZmFzaGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    transition: background-image 0.3s;
+
+}
+.box-3:hover {
+    background-image:url(https://media.istockphoto.com/photos/portrait-of-cute-girl-at-the-studio-picture-id1370281135?k=20&m=1370281135&s=612x612&w=0&h=jDyFgaMRe-xRAT7VNEjuY1FMTrOymvuAHAozFLhQEUo=);
+    transition: background-image 0.3s;
+
+}
+.box-1:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-1:hover .first {
+    opacity: 0;
+}
+#centeralizing{
+   
+    display: flex;
+    justify-content: center;
+}
+
+
+.box-2:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-2:hover .first {
+    opacity: 0;
+}
+.box-3:hover .second {
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.box-3:hover .first {
+    opacity: 0;
+}
+
+/* Media queries */ 
+
+
+@media screen and (max-width: 500px) {
+    body {
+        height: auto;
+    }
+    p {
+        font-size: 90%;
+    }
+   
+   
+}
+@media only screen and (max-width:800px) {
+    #centeralizing{
+   
+        display: block;
+        justify-content: center;
+    }
+}
+
+
+
+
